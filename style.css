@@ -31,6 +31,7 @@ body {
     
     background: var(--bg-url) no-repeat
     top center/cover;
+    height: 100vh;
 
    
 }
@@ -157,8 +158,8 @@ ul li a:hover {
 #social-links {
     display: flex;
     justify-content: center;
-  
-
+    
+    
     padding: 24px 0;
 
     font-size: 38px;
@@ -182,4 +183,16 @@ footer {
     padding: 24px;
     text-align: center;
     font-size: 14px;
+}
+ 
+
+/* media queries */
+@media (min-widht: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
